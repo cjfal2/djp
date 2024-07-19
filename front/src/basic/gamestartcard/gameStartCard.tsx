@@ -1,15 +1,20 @@
 import GameStartButton from "./gameStartButton";
 
-export default function gameStartCard() {
+interface GameStartCardProps {
+  game: string;
+}
+
+export default function gameStartCard({ game }: GameStartCardProps) {
   return (
     <>
-      <div className="p-4 rounded-lg  text-center">
+      <div className="p-4 rounded-lg text-center">
+        {/* <h2 className="font-bold">가위바위보</h2> */}
         <img
-          src="image/test1.jpg"
-          alt="Game 1"
-          className="w-full h-40 object-cover rounded-md shadow-md"
+          src={`image/thumbnail/${game}.png`}
+          alt={game}
+          className="w-full h-40 object-fill rounded-md shadow-md"
         />
-        <GameStartButton/>
+        <GameStartButton game={game} />
       </div>
     </>
   );

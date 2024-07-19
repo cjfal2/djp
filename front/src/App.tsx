@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import MainPage from "./main_page/MainPage";
-import RcpMain from "./rcp_game/RcpMain";
+import RcpMain from "./rsp_game/RcpMain";
 
 export default function App() {
   return (
@@ -10,7 +10,7 @@ export default function App() {
         <Routes>
           {/* 위에서부터 순서대로 찾아짐  */}
           <Route path="/" element={<MainPage />} />
-          <Route path="/rcp" element={<RcpMain />} />
+          <Route path="/rsp" element={<RcpMain />} />
         </Routes>
       </BrowserRouter>
     </>
