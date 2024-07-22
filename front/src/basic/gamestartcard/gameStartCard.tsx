@@ -7,7 +7,7 @@ interface GameStartCardProps {
 export default function gameStartCard({ game }: GameStartCardProps) {
   return (
     <>
-      <div className="p-4 rounded-lg text-center">
+      <div className="max-w-sm p-4 rounded-lg text-center">
         {/* <h2 className="font-bold">가위바위보</h2> */}
         <img
           src={`image/thumbnail/${game}.png`}
