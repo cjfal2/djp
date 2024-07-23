@@ -12,7 +12,7 @@ export default function gameStartCard({ game }: GameStartCardProps) {
         <img
           src={`image/thumbnail/${game}.png`}
           alt={game}
-          className="w-full h-40 object-fill rounded-md shadow-md"
+          className="w-full h-40 object-fill rounded-md"
         />
         <GameStartButton game={game} />
       </div>
